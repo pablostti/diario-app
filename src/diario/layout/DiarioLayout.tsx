@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box, Toolbar } from "@mui/material"
 import { NavBar, Sidebar } from "../components";
 
 const drawerWidth = 250;
@@ -16,9 +16,8 @@ export const DiarioLayout = ({ children } : { children: React.ReactNode}) => {
 
 
        
-        <Box component='main' sx={{ flexGrow: 1, p: 3 }}>
-          
-            {/* Toolbar */}
+        <Box component='main' sx={{ flexGrow: 1, p: 1 }}>
+            <Toolbar/>
             {children}
         </Box>
     </Box>
